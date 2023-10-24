@@ -1,5 +1,6 @@
 package com.banco.connect.net.clientebankcadastro.entity;
 
+import com.banco.connect.net.clientebankcadastro.entity.enums.TipoRole;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +19,8 @@ public class Role implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nomeRole;
+    @Enumerated(EnumType.STRING)
+    private TipoRole nomeRole;
 
     public Role() {
 

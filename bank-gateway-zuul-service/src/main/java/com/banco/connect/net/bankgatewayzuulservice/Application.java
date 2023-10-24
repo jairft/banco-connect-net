@@ -2,12 +2,16 @@ package com.banco.connect.net.bankgatewayzuulservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+@EnableEurekaClient
+@EnableZuulProxy
 @SpringBootApplication
-public class BankGatewayZuulServiceApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankGatewayZuulServiceApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

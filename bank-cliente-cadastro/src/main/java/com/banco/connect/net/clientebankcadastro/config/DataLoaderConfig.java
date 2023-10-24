@@ -3,6 +3,7 @@ package com.banco.connect.net.clientebankcadastro.config;
 import com.banco.connect.net.clientebankcadastro.entity.Cliente;
 import com.banco.connect.net.clientebankcadastro.entity.Role;
 import com.banco.connect.net.clientebankcadastro.entity.enums.Genero;
+import com.banco.connect.net.clientebankcadastro.entity.enums.TipoRole;
 import com.banco.connect.net.clientebankcadastro.repository.ClienteRepository;
 import com.banco.connect.net.clientebankcadastro.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,9 @@ import org.springframework.context.annotation.Profile;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import static com.banco.connect.net.clientebankcadastro.entity.enums.TipoRole.ROLE_ADMIN;
+import static com.banco.connect.net.clientebankcadastro.entity.enums.TipoRole.ROLE_USUARIO;
 
 @Configuration
 @Profile("local")
@@ -30,8 +34,8 @@ public class DataLoaderConfig {
     public ApplicationRunner dataLoader() {
         return args -> {
             // Inserir dados na tabela tb_role
-            Role roleUsuario = new Role(1L, "ROLE_USUARIO");
-            Role roleAdmin = new Role(2L, "ROLE_ADMIN");
+            Role roleUsuario = new Role(1L, ROLE_USUARIO);
+            Role roleAdmin = new Role(2L, ROLE_ADMIN);
             roleRepository.save(roleUsuario);
             roleRepository.save(roleAdmin);
 

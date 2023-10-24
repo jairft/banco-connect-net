@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cliente-bank
+    name: bank-cliente-cadastro
 
   datasource:
     driverClassName: org.h2.Driver
@@ -10,14 +10,12 @@ spring:
   h2:
     console:
       enabled: true
-  jpa:
-    show-sql: true
 
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+        defaultZone: http://localhost:8761/eureka
 
 server:
   port: 8081
