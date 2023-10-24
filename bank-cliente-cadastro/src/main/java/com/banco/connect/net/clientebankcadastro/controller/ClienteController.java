@@ -4,10 +4,9 @@ import com.banco.connect.net.clientebankcadastro.entity.Cliente;
 import com.banco.connect.net.clientebankcadastro.service.ClienteService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/clientes")
@@ -21,4 +20,10 @@ public class ClienteController {
     public ResponseEntity<Cliente> buscarClienteId(@PathVariable Long id){
         return ResponseEntity.ok(clienteService.findByIdCliente(id));
     }
+    @GetMapping("/procurar")
+    public ResponseEntity<Cliente> buscarPorEmail(@RequestParam String email){
+        return ResponseEntity.ok(clienteService.buscarByEmail(email).get());
+    }
+
+
 }
