@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6603a507-b3d2-4e3f-88ce-5da55fb9fd8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/controller/ContaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/controller/TransacoesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/enums/TipoConta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/model/DepositoSaque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/model/LoginCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/repository/ContaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/service/ContaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/service/TransacoesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/config/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/config/security/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/config/security/TokenSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/controller/ContaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/gateway/ContaGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/LoginCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/enums/TipoConta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/service/ContaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/controller/TransacoesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/enums/Genero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/enums/TipoConta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/enums/TipoRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/model/DepositoSaque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/entity/model/LoginCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/exception/CustomBadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/repository/ContaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/banco/connect/net/banktransactionscliente/service/TransacoesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/config/DataLoaderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/config/DataLoaderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/enums/TipoRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/entity/enums/TipoRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/java/com/banco/connect/net/clientebankcadastro/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-cliente-cadastro/src/test/java/com/banco/connect/net/clientebankcadastro/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-cliente-cadastro/src/test/java/com/banco/connect/net/clientebankcadastro/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-gateway-service/src/main/java/com/banco/connect/net/bankgatewayservice/config/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-gateway-service/src/main/java/com/banco/connect/net/bankgatewayservice/config/GatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/gateway/ClienteGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/gateway/ClienteGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/enums/TipoRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/model/enums/TipoRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/java/com/banco/connectnet/banksecureauth/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bank-secure-Auth/src/test/java/com/banco/connectnet/banksecureauth/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-secure-Auth/src/test/java/com/banco/connectnet/banksecureauth/ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2ZVG0c5zubhjRw0ASW51DGz2aXm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/jairfreitas/Documents/projetos pessoais/banco-connect-net/bank-transactions-cliente/src/main/java/com/banco/connect/net/banktransactionscliente",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="bank-transactions-cliente" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banco.connect.net.banktransactionscliente.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6603a507-b3d2-4e3f-88ce-5da55fb9fd8a" name="Changes" comment="" />
+      <created>1702499611806</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702499611806</updated>
+      <workItem from="1702499612933" duration="547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -14,17 +14,18 @@ public class ClienteController {
 
     private final ClienteService clienteService;
 
-    @PostMapping("/cadastrar")
-    public ResponseEntity<Cliente> cadastrarNovoCliente(@RequestBody Cliente cliente){
+    @PostMapping("/registro")
+    public ResponseEntity<Cliente> cadastrarNovoCliente(@RequestBody Cliente cliente) {
         return ResponseEntity.ok(clienteService.cadastrarCliente(cliente));
     }
 
     @GetMapping("/buscar/{id}")
-    public ResponseEntity<Cliente> buscarClienteId(@PathVariable Long id){
+    public ResponseEntity<Cliente> buscarClienteId(@PathVariable Long id) {
         return ResponseEntity.ok(clienteService.findByIdCliente(id));
     }
+
     @GetMapping("/{email}")
-    public ResponseEntity<Cliente> buscarPorEmail(@PathVariable String email){
+    public ResponseEntity<Cliente> buscarPorEmail(@PathVariable String email) {
         return ResponseEntity.ok(clienteService.buscarByEmail(email).get());
     }
 

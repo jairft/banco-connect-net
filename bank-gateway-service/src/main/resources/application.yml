@@ -1,24 +1,26 @@
 server:
-  port: 8765
+    port: 8765
 
 spring:
   application:
     name: bank-gateway-service
 
-  cloud:
-    gateway:
-      routes:
-        - id: bank-cliente-cadastro
-          uri: http://localhost:8081
-          predicates:
-            - Path=/clientes/**
-        - id: bank-secure-auth
-          uri: http://localhost:8082
-          predicates: 
-            - Path=/auth/**
-          filters:
-            - RewriteResponseHeader=Cookie, "REDACTED"
-            - RewriteResponseHeader=Set-Cookie, "REDACTED"
+#  spring:
+#    cloud:
+#      gateway:
+#        routes:
+#          - id: bank-cliente-cadastro
+#            uri: http://localhost:8081
+#            predicates:
+#              - Path=/clientes/** | /contas/**
+#
+#          - id: bank-secure-auth
+#            uri: http://localhost:8082
+#            predicates:
+#              - Path=/auth/clientes/** | /auth/contas/**
+#            filters:
+#              - RewriteResponseHeader=Cookie, ".*", "REDACTED"
+#              - RewriteResponseHeader=Set-Cookie, ".*", "REDACTED"
 
 eureka:
   client:
@@ -28,3 +30,4 @@ eureka:
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
+

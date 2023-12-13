@@ -2,8 +2,20 @@ server:
   port: 8082
 
 spring:
-    application:
-              name: bank-secure-auth
+  application:
+    name: bank-secure-auth
+  main:
+    allow-circular-references: true
+#    security:
+#      user:
+#        password: null
+#      password:
+#        encoder:
+#          bcrypt:
+#            strength: 10
+security:
+  token:
+    secret: ${JWT_SECRET:my-secret-key}
 
 eureka:
   client:
@@ -12,4 +24,16 @@ eureka:
 
 
 cliente:
-      auth: http://localhost:8765/clientes/{email}
+  auth: http://localhost:8765/clientes/{email}
+  login: http://localhost:8765/clientes/login
+  cadastro: http://localhost:8765/clientes/registro
+  conta: http://localhost:8765/contas/cadastrar/{cpf}
+
+
+jwt:
+  secret: sua_chave_secreta_aqui
+
+oauth:
+  client:
+
+

@@ -7,7 +7,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -20,22 +22,33 @@ public class Cliente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
     private String email;
     private String telefone;
     private String cpf;
+
     @Enumerated(EnumType.STRING)
     private Genero genero;
     private String senha;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "tb_cliente_role",
-            joinColumns = @JoinColumn(name = "cliente_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Role> roles = new HashSet<>();
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Conta> contas = new ArrayList<>();
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
 
 
     public Cliente() {
 
+    }
+
+    public void setCpf(String cpf) {
+        if (cpf != null) {
+            this.cpf = cpf.replaceAll("[.-]", "");
+        } else {
+            this.cpf = null;
+        }
     }
 }
