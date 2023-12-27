@@ -17,7 +17,7 @@ O **Banco-Connect-NET** é uma plataforma de serviços bancários online projeta
 
 ## Instalação e Configuração
 
-1. ## Pré-requisitos
+### Pré-requisitos
 
 Para executar e utilizar o **Banco-Connect-NET**, é necessário garantir que os seguintes pré-requisitos estejam instalados:
 
@@ -27,4 +27,6 @@ Para executar e utilizar o **Banco-Connect-NET**, é necessário garantir que os
 
 - **Kafka**: Instale e configure o Kafka para gerenciar a troca de mensagens e eventos no sistema. Assegure-se de que o Kafka esteja operacional e acessível para o projeto.
 
-Após verificar e configurar os pré-requisitos acima, você estará pronto para prosseguir com a instalação e configuração do projeto **Banco-Connect-NET**.
+### Clonando o Repositório
+
+Para começar, clone o repositório usando o seguinte comando: **git clone https://github.com/jairft/banco-connect-net.git**
