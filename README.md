@@ -30,3 +30,9 @@ Para executar e utilizar o **Banco-Connect-NET**, é necessário garantir que os
 ### Clonando o Repositório
 
 Para começar, clone o repositório usando o seguinte comando: **git clone https://github.com/jairft/banco-connect-net.git**
+
+### Execução
+
+Para compilar e construir o projeto, utilize o seguinte comando: **mvn clean install**
+
+Isso garantirá que todas as dependências sejam baixadas, o projeto seja compilado e os testes (se houver) sejam executados. Após a conclusão bem-sucedida, você estará pronto para executar o **Banco-Connect-NET** conforme necessário.
