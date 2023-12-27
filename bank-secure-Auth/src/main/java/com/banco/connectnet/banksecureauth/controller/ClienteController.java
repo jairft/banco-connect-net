@@ -37,13 +37,11 @@ public class ClienteController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody @Validated LoginCliente login) {
+    public ResponseEntity<String> login(@RequestBody LoginCliente login) {
         UsernamePasswordAuthenticationToken usernamePassword = new UsernamePasswordAuthenticationToken(login.getEmail(), login.getSenha());
         try {
             Authentication auth = this.authenticationManager.authenticate(usernamePassword);
-
             String email = ((User) auth.getPrincipal()).getUsername();
-
             Cliente cliente = service.findByEmail(email).block();
             String token = tokenSecurity.gerarToken(cliente);
             logger.info("Autenticação bem-sucedida para o usuário: {}", email);

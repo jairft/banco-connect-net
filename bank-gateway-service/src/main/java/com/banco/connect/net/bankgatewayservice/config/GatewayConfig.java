@@ -12,7 +12,7 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("bank-cliente-cadastro", r -> r
+                .route("bank-register-client", r -> r
                         .path("/clientes/**")
                         .or()
                         .path("/contas/**")
@@ -24,10 +24,18 @@ public class GatewayConfig {
                         .path("/auth/clientes/**")
                         .or()
                         .path("/auth/contas/**")
+                        .or()
+                        .path("/auth/transacoes/**")
                         .filters(f -> f
                                 .rewriteResponseHeader("Cookie", ".*", "REDACTED")
                                 .rewriteResponseHeader("Set-Cookie", ".*", "REDACTED"))
                         .uri("http://localhost:8082"))
+                .route("bank-transactions-client", r -> r
+                        .path("/transacoes/**")
+                        .filters(f -> f
+                                .rewriteResponseHeader("Cookie", ".*", "REDACTED")
+                                .rewriteResponseHeader("Set-Cookie", ".*", "REDACTED"))
+                        .uri("http://localhost:8083"))
                 .build();
     }
 

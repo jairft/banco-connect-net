@@ -1,29 +1,36 @@
-package com.banco.connectnet.banksecureauth.model;
+package com.banco.connect.net.clientebankcadastro.entity;
 
-
-import com.banco.connectnet.banksecureauth.model.enums.TipoConta;
+import com.banco.connect.net.clientebankcadastro.entity.enums.TipoConta;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.io.Serializable;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Getter
 @Setter
+@Entity
 @AllArgsConstructor
-public class Conta implements Serializable {
+@Table(name = "tb_conta")
+public class Conta {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "conta_id")
     private Long id;
     private Integer numero;
     private Integer digito;
     private String agencia;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "tipo_conta")
     private TipoConta tipoConta;
     private BigDecimal saldo;
     private String chave;
+    @ManyToOne
     @JsonIgnore
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
     public Conta() {

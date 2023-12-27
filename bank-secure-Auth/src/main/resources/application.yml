@@ -29,6 +29,10 @@ cliente:
   cadastro: http://localhost:8765/clientes/registro
   conta: http://localhost:8765/contas/cadastrar/{cpf}
 
+transacoes:
+      deposito: http://localhost:8765/transacoes/deposito
+      saque: http://localhost:8765/transacoes/saque
+
 
 jwt:
   secret: sua_chave_secreta_aqui

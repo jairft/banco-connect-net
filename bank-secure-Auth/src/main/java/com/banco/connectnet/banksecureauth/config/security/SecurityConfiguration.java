@@ -16,6 +16,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import static com.banco.connectnet.banksecureauth.model.enums.TipoRole.ADMIN;
+import static com.banco.connectnet.banksecureauth.model.enums.TipoRole.USER;
 
 @Configuration
 @EnableWebSecurity
@@ -25,6 +26,8 @@ public class SecurityConfiguration {
     public static final String URL_LOGIN = "/auth/clientes/login";
     public static final String URL_CADASTRAR_CONTA = "/auth/contas/cadastrar/{cpf}";
     public static final String URL_PROCURAR_CLIENTE = "/auth/clientes/procurar/{email}";
+    public static final String URL_DEPOSITO = "/auth/transacoes/deposito";
+    public static final String URL_SAQUE = "/auth/transacoes/saque";
     @Autowired
     private SecurityFilter securityFilter;
 
@@ -36,6 +39,8 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(authorize -> authorize
                         .antMatchers(HttpMethod.POST, URL_REGISTRO).permitAll()
                         .antMatchers(HttpMethod.POST, URL_LOGIN).permitAll()
+                        .antMatchers(HttpMethod.POST, URL_DEPOSITO).permitAll()
+                        .antMatchers(HttpMethod.POST, URL_SAQUE).hasAuthority(USER.name())
                         .antMatchers(HttpMethod.POST, URL_CADASTRAR_CONTA).hasAuthority(ADMIN.name())
                         .antMatchers(HttpMethod.GET, URL_PROCURAR_CLIENTE).hasAuthority(ADMIN.name()) // Aplique a política de autorização para a rota específica
                         .anyRequest().authenticated()
