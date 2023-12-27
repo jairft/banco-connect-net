@@ -17,6 +17,14 @@ O **Banco-Connect-NET** é uma plataforma de serviços bancários online projeta
 
 ## Instalação e Configuração
 
-1. **Pré-requisitos**: [Inclua informações sobre os pré-requisitos necessários para executar o projeto.]
+1. ## Pré-requisitos
 
-2. **Instruções de Instalação**: 
+Para executar e utilizar o **Banco-Connect-NET**, é necessário garantir que os seguintes pré-requisitos estejam instalados:
+
+- **Java 8**: Certifique-se de ter o JDK 8 instalado em sua máquina. Você pode verificar a instalação executando `java -version` no terminal.
+  
+- **Banco de Dados PostgreSQL**: Garanta que o PostgreSQL esteja instalado e configurado corretamente. Certifique-se de ter as credenciais de acesso e a URL do banco de dados prontas para configuração.
+
+- **Kafka**: Instale e configure o Kafka para gerenciar a troca de mensagens e eventos no sistema. Assegure-se de que o Kafka esteja operacional e acessível para o projeto.
+
+Após verificar e configurar os pré-requisitos acima, você estará pronto para prosseguir com a instalação e configuração do projeto **Banco-Connect-NET**.
