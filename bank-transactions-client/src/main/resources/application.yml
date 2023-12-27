@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  application:
+            name: bank-transactions-client
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banco_connect_db
+    username: jair123
+    password: jair123
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
